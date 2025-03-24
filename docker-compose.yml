@@ -1,0 +1,10 @@
+services:
+  app:
+    build: ./api
+    container_name: api_container
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+    ports:
+      - "4000:4000"
+    command: ["npm", "run", "dev"]
