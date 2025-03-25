@@ -11,7 +11,7 @@ services:
 
   blog:
     build: ./myblog
-    container_name: blog_container_client
+    container_name: blog_container_c
     ports:
       - "3000:3000"
     volumes:
